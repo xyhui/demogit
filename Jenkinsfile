@@ -1,8 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
+        git(url: 'git@github.com:xyhui/demogit.git', branch: 'master')
         git(url: 'git@github.com:xyhui/demogit.git', branch: 'master')
       }
     }
